@@ -1,0 +1,93 @@
+## DiskImages2
+
+> `/System/Library/PrivateFrameworks/DiskImages2.framework/DiskImages2`
+
+### Sections with Same Size but Changed Content
+
+- `__TEXT.__objc_methlist`
+- `__TEXT.__gcc_except_tab`
+- `__TEXT.__cstring`
+- `__TEXT.__constg_swiftt`
+- `__TEXT.__swift5_typeref`
+- `__TEXT.__unwind_info`
+- `__TEXT.__eh_frame`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_selrefs`
+- `__DATA_CONST.__objc_protorefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__DATA_CONST.__objc_arraydata`
+- `__AUTH_CONST.__const`
+- `__AUTH_CONST.__cfstring`
+- `__AUTH_CONST.__objc_const`
+- `__AUTH_CONST.__objc_intobj`
+- `__AUTH_CONST.__objc_arrayobj`
+- `__AUTH_CONST.__objc_dictobj`
+- `__AUTH.__objc_data`
+- `__AUTH.__data`
+- `__DATA.__data`
+- `__DATA_DIRTY.__objc_data`
+
+```diff
+
+   __TEXT.__text: 0x1c7aac
+   __TEXT.__auth_stubs: 0x2290
+   __TEXT.__objc_methlist: 0x3914
+-  __TEXT.__const: 0x12e4a
++  __TEXT.__const: 0x12e5a
+   __TEXT.__gcc_except_tab: 0x18b1c
+   __TEXT.__cstring: 0x12748
+   __TEXT.__oslogstring: 0x19c5
+Symbols:
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEE4syncEv
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEE5_syncEv
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEE6xsputnEPKcl
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEE8overflowEi
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEEC2ERKS2_
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEED0Ev
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEED1Ev
++ __ZN6di_log10logger_bufINS_11log_printerILm348EEEED2Ev
++ __ZN6di_log6loggerINS_11log_printerILm348EEEEC1ERKS2_
++ __ZN6di_log6loggerINS_11log_printerILm348EEEED0Ev
++ __ZN6di_log6loggerINS_11log_printerILm348EEEED1Ev
++ __ZNK6di_log11log_printerILm348EE3logERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
++ __ZTCN6di_log6loggerINS_11log_printerILm348EEEEE360_NSt3__113basic_ostreamIcNS3_11char_traitsIcEEEE
++ __ZTIN6di_log10logger_bufINS_11log_printerILm348EEEEE
++ __ZTIN6di_log6loggerINS_11log_printerILm348EEEEE
++ __ZTSN6di_log10logger_bufINS_11log_printerILm348EEEEE
++ __ZTSN6di_log6loggerINS_11log_printerILm348EEEEE
++ __ZTTN6di_log6loggerINS_11log_printerILm348EEEEE
++ __ZTVN6di_log10logger_bufINS_11log_printerILm348EEEEE
++ __ZTVN6di_log6loggerINS_11log_printerILm348EEEEE
++ __ZThn360_N6di_log6loggerINS_11log_printerILm348EEEED0Ev
++ __ZThn360_N6di_log6loggerINS_11log_printerILm348EEEED1Ev
++ __ZTv0_n24_N6di_log6loggerINS_11log_printerILm348EEEED0Ev
++ __ZTv0_n24_N6di_log6loggerINS_11log_printerILm348EEEED1Ev
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEE4syncEv
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEE5_syncEv
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEE6xsputnEPKcl
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEE8overflowEi
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEEC2ERKS2_
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEED0Ev
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEED1Ev
+- __ZN6di_log10logger_bufINS_11log_printerILm347EEEED2Ev
+- __ZN6di_log6loggerINS_11log_printerILm347EEEEC1ERKS2_
+- __ZN6di_log6loggerINS_11log_printerILm347EEEED0Ev
+- __ZN6di_log6loggerINS_11log_printerILm347EEEED1Ev
+- __ZNK6di_log11log_printerILm347EE3logERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
+- __ZTCN6di_log6loggerINS_11log_printerILm347EEEEE360_NSt3__113basic_ostreamIcNS3_11char_traitsIcEEEE
+- __ZTIN6di_log10logger_bufINS_11log_printerILm347EEEEE
+- __ZTIN6di_log6loggerINS_11log_printerILm347EEEEE
+- __ZTSN6di_log10logger_bufINS_11log_printerILm347EEEEE
+- __ZTSN6di_log6loggerINS_11log_printerILm347EEEEE
+- __ZTTN6di_log6loggerINS_11log_printerILm347EEEEE
+- __ZTVN6di_log10logger_bufINS_11log_printerILm347EEEEE
+- __ZTVN6di_log6loggerINS_11log_printerILm347EEEEE
+- __ZThn360_N6di_log6loggerINS_11log_printerILm347EEEED0Ev
+- __ZThn360_N6di_log6loggerINS_11log_printerILm347EEEED1Ev
+- __ZTv0_n24_N6di_log6loggerINS_11log_printerILm347EEEED0Ev
+- __ZTv0_n24_N6di_log6loggerINS_11log_printerILm347EEEED1Ev
+```

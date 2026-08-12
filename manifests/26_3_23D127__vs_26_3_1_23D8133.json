@@ -1,0 +1,29 @@
+{
+  "device": "iPhone18,1",
+  "from": {
+    "build": "23D127",
+    "input": "iPhone18,1_26.3_23D127_Restore.ipsw",
+    "version": "26.3"
+  },
+  "id": "ios-26.3.1-23D127-23D8133",
+  "major_version": 26,
+  "payload": {
+    "entrypoint": "diffs/26_3_23D127__vs_26_3_1_23D8133/README.md",
+    "git_tree": "2a3f1d97b56493ffee252a8a4f232b120a851871",
+    "logical_bytes": 1307011,
+    "path": "diffs/26_3_23D127__vs_26_3_1_23D8133",
+    "tracked_file_count": 143
+  },
+  "platform": "iOS",
+  "schema_version": 1,
+  "source": {
+    "commit": "d881e84676308404c6947d0218c11f347a6f3a89",
+    "path": "26_3_23D127__vs_26_3_1_23D8133",
+    "repository": "https://github.com/blacktop/ipsw-diffs"
+  },
+  "to": {
+    "build": "23D8133",
+    "input": "iPhone18,1_26.3.1_23D8133_Restore.ipsw",
+    "version": "26.3.1"
+  }
+}
