@@ -1,0 +1,73 @@
+## AGXMetalG18P
+
+> `/System/Library/Extensions/AGXMetalG18P.bundle/AGXMetalG18P`
+
+### Sections with Same Size but Changed Content
+
+- `__TEXT.__objc_methlist`
+- `__TEXT.__unwind_info`
+- `__TEXT.__eh_frame`
+- `__DATA_CONST.__got`
+- `__DATA_CONST.__const`
+- `__DATA_CONST.__objc_classlist`
+- `__DATA_CONST.__objc_catlist`
+- `__DATA_CONST.__objc_protolist`
+- `__DATA_CONST.__objc_selrefs`
+- `__DATA_CONST.__objc_superrefs`
+- `__DATA_CONST.__objc_arraydata`
+- `__AUTH_CONST.__const`
+- `__AUTH_CONST.__cfstring`
+- `__AUTH_CONST.__objc_const`
+- `__AUTH_CONST.__objc_intobj`
+- `__AUTH_CONST.__objc_dictobj`
+- `__AUTH_CONST.__objc_arrayobj`
+- `__AUTH.__objc_data`
+- `__AUTH.__data`
+- `__DATA.__data`
+
+```diff
+
+-  __TEXT.__text: 0x91c06c
+-  __TEXT.__auth_stubs: 0x1210
++  __TEXT.__text: 0x91c158
++  __TEXT.__auth_stubs: 0x1230
+   __TEXT.__objc_methlist: 0xabec
+   __TEXT.__const: 0xed48
+-  __TEXT.__gcc_except_tab: 0xcfb4
++  __TEXT.__gcc_except_tab: 0xcfac
+   __TEXT.__cstring: 0x8ff7
+   __TEXT.__oslogstring: 0x277a
+   __TEXT.__unwind_info: 0x6228
+
+   __DATA_CONST.__objc_selrefs: 0x5250
+   __DATA_CONST.__objc_superrefs: 0x1d0
+   __DATA_CONST.__objc_arraydata: 0x58
+-  __AUTH_CONST.__auth_got: 0x918
++  __AUTH_CONST.__auth_got: 0x928
+   __AUTH_CONST.__const: 0x5740
+   __AUTH_CONST.__cfstring: 0x4380
+   __AUTH_CONST.__objc_const: 0xea88
+
+   - /usr/lib/libcompression.dylib
+   - /usr/lib/libobjc.A.dylib
+   Functions: 7870
+-  Symbols:   14015
++  Symbols:   14017
+   CStrings:  5347
+ 
+Symbols:
++ ___block_descriptor_97_e8_32o40o48b56r_e78_v32?0"<MTLRenderPipelineState>"8"MTLRenderPipelineReflection"16"NSError"24lr56l8s32l8s40l8s48l8
++ _objc_retain_x24
++ _objc_retain_x28
+- ___block_descriptor_96_e8_32o40o48b56r_e78_v32?0"<MTLRenderPipelineState>"8"MTLRenderPipelineReflection"16"NSError"24lr56l8s32l8s40l8s48l8
+Functions:
+~ __ZN3AGX21UserTileShaderFactoryINS_6HAL3008EncodersENS1_7ClassesENS1_10ObjClassesEE29createTileRenderPipeline_implEP31MTLTileRenderPipelineDescriptorP19AGXG18PFamilyDeviceP26AGXG18PFamilyBinaryArchivemPP27MTLRenderPipelineReflectionPP7NSErrorPKNS_17UserShaderFactoryIS2_S3_S4_E17ArchiveLookupInfoEPU27objcproto16MTL4CompilerTask11objc_objectU13block_pointerFvPU33objcproto22MTLRenderPipelineState11objc_objectSD_SG_E : 1112 -> 1100
+~ ____ZN3AGX21UserTileShaderFactoryINS_6HAL3008EncodersENS1_7ClassesENS1_10ObjClassesEE29createTileRenderPipeline_implEP31MTLTileRenderPipelineDescriptorP19AGXG18PFamilyDeviceP26AGXG18PFamilyBinaryArchivemPP27MTLRenderPipelineReflectionPP7NSErrorPKNS_17UserShaderFactoryIS2_S3_S4_E17ArchiveLookupInfoEPU27objcproto16MTL4CompilerTask11objc_objectU13block_pointerFvPU33objcproto22MTLRenderPipelineState11objc_objectSD_SG_E_block_invoke_2 : 7348 -> 7436
+~ __ZN3AGX23UserCommonShaderFactoryINS_6HAL3008EncodersENS1_7ClassesENS1_10ObjClassesEE26createComputePipeline_implEP28MTLComputePipelineDescriptorP19AGXG18PFamilyDeviceP26AGXG18PFamilyBinaryArchivemPP28MTLComputePipelineReflectionPP7NSErrorPKNS_17UserShaderFactoryIS2_S3_S4_E17ArchiveLookupInfoEPU27objcproto16MTL4CompilerTask11objc_objectU13block_pointerFvPU34objcproto23MTLComputePipelineState11objc_objectSD_SG_E : 1144 -> 1132
+~ ____ZN3AGX23UserCommonShaderFactoryINS_6HAL3008EncodersENS1_7ClassesENS1_10ObjClassesEE26createComputePipeline_implEP28MTLComputePipelineDescriptorP19AGXG18PFamilyDeviceP26AGXG18PFamilyBinaryArchivemPP28MTLComputePipelineReflectionPP7NSErrorPKNS_17UserShaderFactoryIS2_S3_S4_E17ArchiveLookupInfoEPU27objcproto16MTL4CompilerTask11objc_objectU13block_pointerFvPU34objcproto23MTLComputePipelineState11objc_objectSD_SG_E_block_invoke_2 : 11436 -> 11456
+~ __ZN3AGX23UserCommonShaderFactoryINS_6HAL3008EncodersENS1_7ClassesENS1_10ObjClassesEE25createRenderPipeline_implI27MTLRenderPipelineDescriptorEEP27AGXG18PFamilyRenderPipelinePT_P19AGXG18PFamilyDeviceP26AGXG18PFamilyBinaryArchivemPP27MTLRenderPipelineReflectionPP7NSErrorPKNS_17UserShaderFactoryIS2_S3_S4_E17ArchiveLookupInfoEPU27objcproto16MTL4CompilerTask11objc_objectU13block_pointerFvPU33objcproto22MTLRenderPipelineState11objc_objectSH_SK_E : 1616 -> 1620
+~ ____ZN3AGX23UserCommonShaderFactoryINS_6HAL3008EncodersENS1_7ClassesENS1_10ObjClassesEE25createRenderPipeline_implI27MTLRenderPipelineDescriptorEEP27AGXG18PFamilyRenderPipelinePT_P19AGXG18PFamilyDeviceP26AGXG18PFamilyBinaryArchivemPP27MTLRenderPipelineReflectionPP7NSErrorPKNS_17UserShaderFactoryIS2_S3_S4_E17ArchiveLookupInfoEPU27objcproto16MTL4CompilerTask11objc_objectU13block_pointerFvPU33objcproto22MTLRenderPipelineState11objc_objectSH_SK_E_block_invoke : 616 -> 676
+~ ____ZN3AGX23UserCommonShaderFactoryINS_6HAL3008EncodersENS1_7ClassesENS1_10ObjClassesEE25createRenderPipeline_implI31MTLMeshRenderPipelineDescriptorEEP27AGXG18PFamilyRenderPipelinePT_P19AGXG18PFamilyDeviceP26AGXG18PFamilyBinaryArchivemPP27MTLRenderPipelineReflectionPP7NSErrorPKNS_17UserShaderFactoryIS2_S3_S4_E17ArchiveLookupInfoEPU27objcproto16MTL4CompilerTask11objc_objectU13block_pointerFvPU33objcproto22MTLRenderPipelineState11objc_objectSH_SK_E_block_invoke : 616 -> 676
+~ -[AGXG18PFamilyBuffer newTensorWithDescriptor:offset:error:] : 684 -> 708
+~ -[AGXG18PFamilyTensor strides] : 600 -> 604
+```
