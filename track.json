@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "id": "ios-26",
+  "platform": "iOS",
+  "appledb_platform": "iOS",
+  "device": "iPhone18,1",
+  "major_version": 26,
+  "anchor": {
+    "version": "26.6.1 RC",
+    "build": "23G82",
+    "released": "2026-08-10T00:00:00Z",
+    "beta": false,
+    "rc": true
+  }
+}
