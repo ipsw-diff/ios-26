@@ -21,7 +21,72 @@ jobs:
   discover:
     permissions:
       contents: read
-    uses: ipsw-diff/catalog/.github/workflows/discover.yml@19ddd7c2131d6048eee396a41e5dc7fa9acebf2b
+    uses: ipsw-diff/catalog/.github/workflows/discover.yml@b2acda91fb3a16d1a9779d564b64ba8bac37b50d
+    with:
+      policy-path: track.json
+      manifests-dir: manifests
+
+  prepare-generation:
+    needs: discover
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') &&
+      needs.discover.outputs.status == 'candidate'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      build: ${{ steps.state.outputs.build }}
+      branch: ${{ steps.state.outputs.branch }}
+      state: ${{ steps.state.outputs.state }}
+    steps:
+      - name: Resolve bounded generation state
+        id: state
+        env:
+          DECISION: ${{ needs.discover.outputs.result }}
+        run: |
+          set -euo pipefail
+          build="$(jq --exit-status --raw-output '.edges[0].to.build' <<< "$DECISION")"
+          [[ "$build" =~ ^[A-Za-z0-9]+$ ]]
+          branch="generated/ios-26-$build"
+          state=new
+          if git ls-remote --exit-code --heads \
+            "https://github.com/$GITHUB_REPOSITORY.git" \
+            "refs/heads/$branch" >/dev/null 2>&1; then
+            state=existing
+          fi
+          {
+            printf 'build=%s\n' "$build"
+            printf 'branch=%s\n' "$branch"
+            printf 'state=%s\n' "$state"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Summarize generation decision
+        env:
+          BRANCH: ${{ steps.state.outputs.branch }}
+          BUILD: ${{ steps.state.outputs.build }}
+          STATE: ${{ steps.state.outputs.state }}
+        run: |
+          {
+            echo '### iOS 26 generation decision'
+            echo
+            echo "- build: $BUILD"
+            echo "- branch: $BRANCH"
+            echo "- prior state: $STATE"
+            if [ "$STATE" = new ]; then
+              echo '- result: start one reusable generation job'
+            else
+              echo '- result: no-op; this build is already published for review'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  generate:
+    needs: prepare-generation
+    if: needs.prepare-generation.outputs.state == 'new'
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: ipsw-diff/catalog/.github/workflows/generate.yml@b2acda91fb3a16d1a9779d564b64ba8bac37b50d
     with:
       policy-path: track.json
       manifests-dir: manifests
