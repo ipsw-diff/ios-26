@@ -1,0 +1,27 @@
+name: Discover iOS 26 firmware
+
+on:
+  schedule:
+    - cron: "57 */6 * * *"
+  pull_request:
+    paths:
+      - .github/workflows/discover.yml
+      - diffs/**
+      - manifests/**
+      - track.json
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ios-26-discovery-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    permissions:
+      contents: read
+    uses: ipsw-diff/catalog/.github/workflows/discover.yml@19ddd7c2131d6048eee396a41e5dc7fa9acebf2b
+    with:
+      policy-path: track.json
+      manifests-dir: manifests
