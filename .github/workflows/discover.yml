@@ -2,7 +2,7 @@ name: Discover iOS 26 firmware
 
 on:
   schedule:
-    - cron: "57 */6 * * *"
+    - cron: "57 * * * *"
   pull_request:
     paths:
       - .github/workflows/discover.yml
