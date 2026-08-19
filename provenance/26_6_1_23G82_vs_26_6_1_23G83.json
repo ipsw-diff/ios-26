@@ -1,0 +1,107 @@
+{
+  "catalog_commit": "7c796028220ff850bf08d253b6b9084f6ff60a96",
+  "discovery": {
+    "anchor": {
+      "appledb_path": "osFiles/iOS/23x - 26.x/23G82.json",
+      "beta": false,
+      "build": "23G82",
+      "rc": true,
+      "released": "2026-08-10T00:00:00Z",
+      "source": {
+        "input": "iPhone18,1_26.6.1_23G82_Restore.ipsw",
+        "sha256": "1e7b5c8bd3f7d9874be2229ba76a9830da28387ba4e4925cf22a324ed3c5e9be",
+        "size": 11518928350,
+        "url": "https://updates.cdn-apple.com/2026SummerFCS/fullrestores/140-83298/82D43C0E-4AD1-4900-9156-D1C6937FC3A4/iPhone18,1_26.6.1_23G82_Restore.ipsw"
+      },
+      "version": "26.6.1 RC"
+    },
+    "appledb": {
+      "commit": "c97f2fd21a5e7e313b96127dfaaaadd60fb7d912",
+      "repository": "https://github.com/littlebyteorg/appledb"
+    },
+    "appledb_platform": "iOS",
+    "device": "iPhone18,1",
+    "edges": [
+      {
+        "from": {
+          "appledb_path": "osFiles/iOS/23x - 26.x/23G82.json",
+          "beta": false,
+          "build": "23G82",
+          "rc": true,
+          "released": "2026-08-10T00:00:00Z",
+          "source": {
+            "input": "iPhone18,1_26.6.1_23G82_Restore.ipsw",
+            "sha256": "1e7b5c8bd3f7d9874be2229ba76a9830da28387ba4e4925cf22a324ed3c5e9be",
+            "size": 11518928350,
+            "url": "https://updates.cdn-apple.com/2026SummerFCS/fullrestores/140-83298/82D43C0E-4AD1-4900-9156-D1C6937FC3A4/iPhone18,1_26.6.1_23G82_Restore.ipsw"
+          },
+          "version": "26.6.1 RC"
+        },
+        "to": {
+          "appledb_path": "osFiles/iOS/23x - 26.x/23G83.json",
+          "beta": false,
+          "build": "23G83",
+          "rc": false,
+          "released": "2026-08-17T00:00:00Z",
+          "source": {
+            "input": "iPhone18,1_26.6.1_23G83_Restore.ipsw",
+            "sha256": "f7bc64d6a4fdc6695cf3077391258115faf451be6856f5bcf2cc9d50d44c37e0",
+            "size": 11519036732,
+            "url": "https://updates.cdn-apple.com/2026SummerFCS/fullrestores/140-75048/DA1909FD-EE14-421B-BB9C-A85335254485/iPhone18,1_26.6.1_23G83_Restore.ipsw"
+          },
+          "version": "26.6.1"
+        }
+      }
+    ],
+    "latest": {
+      "appledb_path": "osFiles/iOS/23x - 26.x/23G83.json",
+      "beta": false,
+      "build": "23G83",
+      "rc": false,
+      "released": "2026-08-17T00:00:00Z",
+      "source": {
+        "input": "iPhone18,1_26.6.1_23G83_Restore.ipsw",
+        "sha256": "f7bc64d6a4fdc6695cf3077391258115faf451be6856f5bcf2cc9d50d44c37e0",
+        "size": 11519036732,
+        "url": "https://updates.cdn-apple.com/2026SummerFCS/fullrestores/140-75048/DA1909FD-EE14-421B-BB9C-A85335254485/iPhone18,1_26.6.1_23G83_Restore.ipsw"
+      },
+      "version": "26.6.1"
+    },
+    "major_version": 26,
+    "platform": "iOS",
+    "schema_version": 2,
+    "source_inventory": {
+      "observed": 49,
+      "selected": 2
+    },
+    "status": "candidate",
+    "track_id": "ios-26"
+  },
+  "generator": {
+    "name": "ipsw",
+    "version": "Version: 3.1.708, BuildCommit: 84f5d9aef45149840bdd00b7b8e661088c1d6881"
+  },
+  "inputs": [
+    {
+      "role": "previous",
+      "sha256": "1e7b5c8bd3f7d9874be2229ba76a9830da28387ba4e4925cf22a324ed3c5e9be",
+      "size": 11518928350,
+      "url": "https://updates.cdn-apple.com/2026SummerFCS/fullrestores/140-83298/82D43C0E-4AD1-4900-9156-D1C6937FC3A4/iPhone18,1_26.6.1_23G82_Restore.ipsw"
+    },
+    {
+      "role": "next",
+      "sha256": "f7bc64d6a4fdc6695cf3077391258115faf451be6856f5bcf2cc9d50d44c37e0",
+      "size": 11519036732,
+      "url": "https://updates.cdn-apple.com/2026SummerFCS/fullrestores/140-75048/DA1909FD-EE14-421B-BB9C-A85335254485/iPhone18,1_26.6.1_23G83_Restore.ipsw"
+    }
+  ],
+  "schema_version": 1,
+  "signatures": {
+    "commit": "81178cfe6c8869612ef092f6471fce3e17d95b20",
+    "repository": "https://github.com/blacktop/symbolicator"
+  },
+  "source_commit": "c6a5b79e628b7c76c416a21044e5be9359c6b8e7",
+  "source_tag": "payload/26_6_1_23G82_vs_26_6_1_23G83",
+  "workflow_commit": "c0171374a4a5159de7524217d8103c0ffff52b86",
+  "workflow_run": "https://github.com/ipsw-diff/ios-26/actions/runs/32059527773"
+}
